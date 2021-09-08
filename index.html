@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel='stylesheet' href="styles.css">
+  
+  <title>Revv - Sell Cars Online</title>
+
+</head>
+<body>
+  <div class="main">
+    <div class="backdrop">
+    </div>
+    <div class="sidedrawer">
+      <div class="sd-login">
+        <i class="fas fa-user"></i>
+        <div>Login or Signup</div>
+      </div>
+      <div class="sd-list">
+        <div>Car Rental</div>
+        <div>Car Subscription</div>
+        <div>Hyundai Subscription</div>
+        <div>Mahindra Subscription</div>
+        <div>Tariff - Car Rental</div>
+        <div>How it Works - Car Subscription</div>
+        <div>Subscribe vs Buy - car Subscriptions</div>
+        <div>FAQ</div>
+      </div>
+    </div>
+    <nav class="navbar">
+
+      <div class="hamburger-icon">
+        <div class="hamburger-drawer"></div>
+        <div class="hamburger-drawer"></div>
+        <div class="hamburger-drawer"></div>
+      </div>
+
+      <div class="nav-header">
+        <a href="#"><h2>Revv</h2></a>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#" class="h-sub">
+            <p><strong>Hyundai</strong> Subscription</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="m-sub">
+            <p><strong>Mahindra</strong> Subscription</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>Car Subscription</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>How it Works</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>FAQs</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-sign-out"></i>
+            <span>
+              Login or Signup
+            </span>
+            </i>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div class="carousel-search">
+      <div class="carousel" data-flickity='{ "autoplay": true, "prevNextButtons": false }'>
+        <div class="carousel-cell" style="background-image: url('images/ST_BG_1.png');">
+          <div class="carousel-image-holder">
+            <img class="carousel-cell-image" src="images/ST_Desktop_1_FG.png" alt="tulip" />
+          </div> 
+        </div>
+        <div class="carousel-cell" style="background-image: url('images/ST_LT_BG_2.png');">
+          <div class="carousel-image-holder">
+            <img class="carousel-cell-image" src="images/ST_Desktop_2_FG.png" alt="tulip" />
+          </div> 
+        </div>
+        <div class="carousel-cell" style="background-image: url('images/ST_LT_BG_3.png');">
+            <div class="carousel-image-holder">
+              <img class="carousel-cell-image" src="images/ST_Desktop_3_FG.png" alt="tulip" />
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-container-holder">
+      <div class="searchContainer">
+        <div class="rent-type">
+          <div class="rentals rent-active" id="rent-btn">
+            <p><strong>Rentals</strong></p>
+            <p>For hours & days</p>
+          </div>
+          <div class="subs" id="sub-btn">
+            <p><strong>Subscriptions</strong></p>
+            <p>For months & years</p>
+          </div>
+        </div>
+  
+        <div class="search-header">
+          <p class="search-header-2">Rentals</p>
+          <p class="search-header-text-2">Self drive car rentals in India</p>
+        </div>
+  
+        <div class="city-list">
+          <i class="fas fa-map-marker-alt city-badge"></i>
+          <select class="city-dropdown">
+            <option class="default-option" selected disabled hidden>Choose City</option>
+            <optgroup label="Top Cities">
+              <option value="Banglore">Banglore</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+            </optgroup>
+            <optgroup label="Other Cities">
+              <option value="Vizag">Vizag</option>
+              <option value="Kullu">Kullu</option>
+              <option value="Ooty">Ooty</option>
+            </optgroup>
+          </select>
+        </div>
+  
+        <div class="search-date-layout">
+          <div class="start-date">
+            <select>
+              <option class="default-option" selected disabled hidden>Start date</option>
+            </select>
+          </div>
+          <div class="end-date">
+            <select>
+              <option class="default-option" selected disabled hidden>End date</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="submit-search">
+            <p class="submit-search-btn rent-active">Search</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="row">
+    </div>
+    
+    <div class="f-container">
+      <div class="f-header">
+        <p>Featured</p>
+      </div>
+
+      <div class="f-carousel" 
+      data-flickity='{ 
+      "autoplay": true, 
+      "contain": true, 
+      "prevNextButtons": false,
+      "groupCells": 2 }'
+      >
+        <div class="f-card">
+          <img class="f-image" src="images/f1.png" alt="tulip" />
+        </div>
+        <div class="f-card">
+          <img class="f-image" src="images/f2.png" alt="tulip" />
+        </div>
+        <div class="f-card">
+          <img class="f-image" src="images/f3.png" alt="tulip" />
+        </div>
+        <div class="f-card">
+          <img class="f-image" src="images/f4.png" alt="tulip" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    </div>
+    
+    <hr class="break-line">
+
+    <div class="row">
+    </div>
+      
+    <div class="icons">
+      <div class="i-header">
+        <p>Why Revv</p>
+        <hr class="i-title-break">
+      </div>
+
+      <div class="i-list">
+        <div class="single-icon">
+          <img src="images/i1.png" alt="" class="i-img">
+          <p class="i-desc">Multiple products to meet all your self-drive needs</p>
+        </div>
+
+        <div class="single-icon">
+          <img src="images/i2.png" alt="" class="i-img">
+          <p class="i-desc">Freedom to choose prices with or without fuel</p>
+        </div>
+
+        <div class="single-icon">
+          <img src="images/i3.png" alt="" class="i-img">
+          <p class="i-desc">100% Doorstep delivery & return</p>
+        </div>
+
+        <div class="single-icon">
+          <img src="images/i4.png" alt="" class="i-img">
+          <p class="i-desc">Unlimited Kms option</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+    </div>
+
+    <div class="icons">
+      <div class="p-header">
+        <p>Press Coverage</p>
+        <hr class="p-title-break">
+      </div>
+
+      <div class="p-list">
+        <div class="single-icon-p">
+          <img src="images/p1.png" alt="" class="i-img">
+        </div>
+
+        <div class="single-icon-p">
+          <img src="images/p2.png" alt="" class="i-img">
+        </div>
+
+        <div class="single-icon-p">
+          <img src="images/p3.png" alt="" class="i-img">
+        </div>
+
+        <div class="single-icon-p">
+          <img src="images/p4.png" alt="" class="i-img">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+    </div>
+
+    <div class="footer-outer">
+      <div class="footer-inner">
+        <div class="footer-1">
+          <div class="logo">
+            <img src="images/revvLogo.png">
+          </div>
+          <ul class="logo-list">
+            <li>
+              <a class="fa fa-twitter fa-2x" href="#"></a>
+            </li>
+            <li>
+              <a class="fa fa-facebook fa-2x" href="#"></a>
+            </li>
+            <li>
+              <a class="fa fa-instagram fa-2x" href="#"></a>
+            </li>
+            <li>
+              <a class="fa fa-youtube fa-2x" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-2">
+          <div class="f-list-holder"> 
+            <ul class="logo-list-2">
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>Subscriptions</a>
+              </li>
+              <li>
+                <a>Buy Used Cars</a>
+              </li>
+              <li>
+                <a>Tariffs</a>
+              </li>
+              <li>
+                <a>FAQ</a>
+              </li>
+              <li>
+                <a>Policy</a>
+              </li>
+              <li>
+                <a>Blog</a>
+              </li>
+            </ul>
+          </div>         
+        </div>
+
+        <div class="footer-3">
+          <div class="f-list-holder">
+            <ul class="logo-list-3">
+              <li>
+                <h4>Have Questions?</h4>
+              </li>
+              <li>
+                <p>24/7 Customer Support</p>
+              </li>
+              <li>
+                <h4 class="contact">Contact us</h4>
+              </li>
+              <li>
+                <p class="contact-info">+91-9250035555</p>
+              </li>
+              <li>
+                <a class="contact-mail">care@revv.co.in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src='script.js'></script>
+  <script src="https://kit.fontawesome.com/4aae11aace.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
